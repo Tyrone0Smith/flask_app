@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>System Dashboard</h2>
+<ul>
+    <li>CPU Usage: {{ cpu }}%</li>
+    <li>Memory Usage: {{ mem }}%</li>
+    <li>Disk Usage: {{ disk }}%</li>
+    <li>Uptime: {{ uptime }} hours</li>
+    <li>Load Average (1m): {{ load1 }}</li>
+    <li>Load Average (5m): {{ load5 }}</li>
+    <li>Load Average (15m): {{ load15 }}</li>
+    <!-- 👇 NEW lines -->
+    <li>Data Sent: {{ sent_mb|round(2) }} MB</li>
+    <li>Data Received: {{ recv_mb|round(2) }} MB</li>
+</ul>
+{% endblock %}
+

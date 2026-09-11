@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="eng"
+<head>
+    <meta charset="UTF-8">
+    <title>Home - My Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css'}}">
+</head>
+<body>
+    <header>
+	<h1>Welcome to My Rasberry Server Project</h2>
+	<nav>
+	    <a href="{{ url_for('home'}}">Home</a>
+	    <a href="{{ url_for('dashboard'}}">Dashboard</a>
+	</nav>
+    </header>
+    
+    <main>
+	<sec

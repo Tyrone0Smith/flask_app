@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>System Dashboard</h2>
+<ul>
+    <li>CPU Usage: {{ cpu }}%</li>
+    <li>Memory Usage: {{ mem }}%</li>
+    <li>Disk Usage: {{ disk }}%</li>
+</ul>
+{% endblock %}
+

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Welcome to My Dashboard Project</h1>
+    <p>This is the home page. Use the navigation bar above to explore the dashboard and status pages.</p>
+
+    <section>
+        <h2>Quick Links</h2>
+        <ul>
+            <li><a href="{{ url_for('dashboard') }}">Go to Dashboard</a></li>
+            <li><a href="{{ url_for('status') }}">View Status</a></li>
+        </ul>
+    </section>
+{% endblock %}
+
